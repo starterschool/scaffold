@@ -3,10 +3,12 @@
 
 // Global templates
 
-%group:after {
-    display: table;
-    clear: both;
-    content: "";
+%group {
+    &:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
 }
 
 %container {
