@@ -13,20 +13,57 @@
 
 %container {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: $wrap_width;
+    padding: 0 $gutter_width;
+}
+
+%content {
+    font-size: 16px;
 }
 
 // Global tags
 
 body {
-    background: pink;
     font-family: Helvetica;
     font-size: 16px;
     line-height: 21px;
+    background:lightgrey;
 }
 
 a {
     color: #800000;
 }
 
+p {
+    margin-bottom: 1.1em;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: .8em;
+}
+
 // Everything else
+
+.wrap {
+    @extend %container;
+    background:white;
+}
+
+.content {
+    padding: 20px 0;
+    font-size: 0;
+}
+
+.main {
+    @extend %content;
+    @include columnify(8);
+}
+
+.side {
+    @extend %content;
+    @include columnify(4, true);
+    color: #666;
+    font-size: 14px;
+}

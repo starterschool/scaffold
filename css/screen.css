@@ -55,13 +55,57 @@ table {
   background-position: 0 0;
 }
 
+.wrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.main, .side {
+  font-size: 16px;
+}
+
 body {
-  background: pink;
   font-family: Helvetica;
   font-size: 16px;
   line-height: 21px;
+  background: lightgrey;
 }
 
 a {
   color: #800000;
+}
+
+p {
+  margin-bottom: 1.1em;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.wrap {
+  background: white;
+}
+
+.content {
+  padding: 20px 0;
+  font-size: 0;
+}
+
+.main {
+  width: 633.33333px;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.side {
+  width: 306.66667px;
+  display: inline-block;
+  vertical-align: top;
+  color: #666;
+  font-size: 14px;
 }
