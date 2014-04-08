@@ -6,6 +6,7 @@ Starter kit for new sites. Includes:
 * Grid mixins
 * Arrow (up/down) mixins
 * Reset rules
+* HTML5Shiv
 * jQuery
 * Starter tags and fake content
 
